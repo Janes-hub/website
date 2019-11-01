@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:#999;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Roboto, Arial, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+ul{
+    list-style: none;
+}
+a{
+    color:inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+a img{
+    display: block;
+}

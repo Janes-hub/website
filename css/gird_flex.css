@@ -1,0 +1,344 @@
+/*
+栅格系统（flex版）
+*/
+
+/* 手机（ 移动优先 ） */
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row.main-start{
+  justify-content: flex-start;
+}
+
+.row.main-center{
+  justify-content: center;
+}
+
+.row.main-end{
+  justify-content: flex-end;
+}
+
+.row.main-between{
+  justify-content: space-between;
+}
+
+.row.main-around{
+  justify-content: space-around;
+}
+
+.row.main-evenly{
+  justify-content: space-evenly;
+}
+
+.row > div{
+  width: 100%;
+}
+.row.gap0 > [class *= "col-"]{
+  padding-left: 0;
+  padding-right: 0;
+}
+.row > [class *= "col-"]{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row > .col-xs-1{
+  width: 8.33333333%;
+}
+
+.row > .col-xs-2{
+  width: 16.66666667%;
+}
+
+.row > .col-xs-2dot4{
+  width: 20%;
+}
+
+.row > .col-xs-3{
+  width: 25%;
+}
+
+.row > .col-xs-4{
+  width: 33.33333333%;
+}
+
+.row > .col-xs-5{
+  width: 41.66666667%;
+}
+
+.row > .col-xs-6{
+  width: 50%;
+}
+
+.row > .col-xs-7{
+  width: 58.33333333%;
+}
+
+.row > .col-xs-8{
+  width: 66.66666667%;
+}
+
+.row > .col-xs-9{
+  width: 75%;
+}
+
+.row > .col-xs-10{
+  width: 83.33333333%;
+}
+
+.row > .col-xs-11{
+  width: 91.66666667%;
+}
+
+.row > .col-xs-12{
+  width: 100%;
+}
+
+/* 平板 */
+@media screen and ( min-width: 768px ){
+
+  .container{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 0;
+    padding-right: 0; */
+  }
+
+  .row > .col-sm-1{
+    width: 8.33333333%;
+  }
+  
+  .row > .col-sm-2{
+    width: 16.66666667%;
+  }
+
+  .row > .col-sm-2dot4{
+    width: 20%;
+  }
+
+  .row > .col-sm-3{
+    width: 25%;
+  }
+  
+  .row > .col-sm-4{
+    width: 33.33333333%;
+  }
+  
+  .row > .col-sm-5{
+    width: 41.66666667%;
+  }
+  
+  .row > .col-sm-6{
+    width: 50%;
+  }
+  
+  .row > .col-sm-7{
+    width: 58.33333333%;
+  }
+  
+  .row > .col-sm-8{
+    width: 66.66666667%;
+  }
+  
+  .row > .col-sm-9{
+    width: 75%;
+  }
+  
+  .row > .col-sm-10{
+    width: 83.33333333%;
+  }
+  
+  .row > .col-sm-11{
+    width: 91.66666667%;
+  }
+  
+  .row > .col-sm-12{
+    width: 100%;
+  }
+
+}
+
+/* 中等屏幕 */
+@media screen and ( min-width: 992px ){
+
+  .container {
+    width: 970px;
+  }
+
+  .row > .col-md-1{
+    width: 8.33333333%;
+  }
+  
+  .row > .col-md-2{
+    width: 16.66666667%;
+  }
+
+  .row > .col-md-2dot4{
+    width: 20%;
+  }
+
+  .row > .col-md-3{
+    width: 25%;
+  }
+  
+  .row > .col-md-4{
+    width: 33.33333333%;
+  }
+  
+  .row > .col-md-5{
+    width: 41.66666667%;
+  }
+  
+  .row > .col-md-6{
+    width: 50%;
+  }
+  
+  .row > .col-md-7{
+    width: 58.33333333%;
+  }
+  
+  .row > .col-md-8{
+    width: 66.66666667%;
+  }
+  
+  .row > .col-md-9{
+    width: 75%;
+  }
+  
+  .row > .col-md-10{
+    width: 83.33333333%;
+  }
+  
+  .row > .col-md-11{
+    width: 91.66666667%;
+  }
+  
+  .row > .col-md-12{
+    width: 100%;
+  }
+
+}
+
+/* 大型屏幕 */
+@media screen and ( min-width: 1200px ){
+
+  .container {
+    width: 1170px;
+  }
+
+  .row > .col-lg-1{
+    width: 8.33333333%;
+  }
+  
+  .row > .col-lg-2{
+    width: 16.66666667%;
+  }
+
+  .row > .col-lg-2dot4{
+    width: 20%;
+  }
+
+  .row > .col-lg-3{
+    width: 25%;
+  }
+  
+  .row > .col-lg-4{
+    width: 33.33333333%;
+  }
+  
+  .row > .col-lg-5{
+    width: 41.66666667%;
+  }
+  
+  .row > .col-lg-6{
+    width: 50%;
+  }
+  
+  .row > .col-lg-7{
+    width: 58.33333333%;
+  }
+  
+  .row > .col-lg-8{
+    width: 66.66666667%;
+  }
+  
+  .row > .col-lg-9{
+    width: 75%;
+  }
+  
+  .row > .col-lg-10{
+    width: 83.33333333%;
+  }
+  
+  .row > .col-lg-11{
+    width: 91.66666667%;
+  }
+  
+  .row > .col-lg-12{
+    width: 100%;
+  }
+
+}
+
+
+/* 响应式内容 */
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.table-responsive{
+  overflow: auto;
+}
+
+/* 响应式工具 */
+@media (min-width: 1200px) {
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
